@@ -1,7 +1,5 @@
 # eCONTACT — Приложение для управления контактами
 
-![Логотип eCONTACT](https://img.shields.io/badge/eCONTACT-v1.0-teal)
-
 Простое настольное приложение на C# (Windows Forms) для сохранения и управления контактными данными членов семьи и друзей. Разработано в соответствии с учебным заданием.
 
 ---
@@ -41,6 +39,22 @@
 2. **SQL Server** 2020 или новее (Express/Developer/Standard)
 3. **SQL Server Management Studio (SSMS)** для выполнения скрипта БД
 
+### Подготовка
+
+Клонирование репозитория: 
+```bash
+git clone https://github.com/Kiwinze/econtact.git
+cd econtact
+```
+
+### Настройка строки подключения:
+
+В файле Form1.cs, найдите сверху строку:
+```csharp
+string connectionString = @"Data Source=localhost;Initial Catalog=ContactDB;Integrated Security=True;";
+```
+Измените параметр Data Source в соответствии с вашей базой данных, а также и иные параметры в соответствии с вашим SQL Server
+
 ---
 
 ### Шаг 1. Создание базы данных
@@ -74,3 +88,4 @@ VALUES
 ('Алексей', 'Сидоров', '+7 934 567-89-01', 'г. Новосибирск, ул. Гагарина, д. 3', 'Мужской'),
 ('Елена', 'Козлова', '+7 945 678-90-12', 'г. Екатеринбург, ул. Мира, д. 4', 'Женский');
 GO
+```
