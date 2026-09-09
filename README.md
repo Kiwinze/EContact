@@ -57,7 +57,7 @@ string connectionString = @"Data Source=localhost;Initial Catalog=ContactDB;Inte
 
 ---
 
-### Шаг 1. Создание базы данных
+### Создание базы данных
 
 Выполните скрипт `Database/CreateDatabase.sql` в **SQL Server Management Studio**:
 
